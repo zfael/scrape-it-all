@@ -1,12 +1,15 @@
 {
-  "name": "scraper-it-all",
+  "name": "scrape-it-all",
   "version": "0.0.0",
-  "description": "Module web scraper for Node.JS",
+  "description": "Modular web scraper for Node.JS",
   "author": "",
   "license": "ISC",
   "keywords": [
-    "web-scraper",
-    "crawler"
+    "web-scraping",
+    "crawler",
+    "scraping-websites",
+    "scraping",
+    "scraper"
   ],
   "scripts": {
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src/",
