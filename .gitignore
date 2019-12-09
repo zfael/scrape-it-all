@@ -1,0 +1,4 @@
+# package dirs
+node_modules
+
+dist
