@@ -1,8 +1,10 @@
 {
-  "name": "scrape-it-all",
-  "version": "0.0.0",
+  "name": "@zfael/scrape-it-all",
+  "version": "0.0.3",
   "description": "Modular web scraper for Node.JS",
-  "author": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "author": "Rafael Bertelli <rafael.p.bertelli@gmail.com>",
   "license": "ISC",
   "keywords": [
     "web-scraping",
@@ -35,5 +37,6 @@
   "engines": {
     "node": "^12.13.0",
     "npm": "^6.12.0"
-  }
+  },
+  "files": ["lib/**/"]
 }
