@@ -1,10 +1,13 @@
 {
   "name": "@scrape-it-all/coin-market-cap",
+  "description": "Get information of a given crypto coin on coin market cap website",
   "version": "0.2.0",
-  "description": "",
-  "keywords": [],
-  "author": "Rafael Bertelli <rafael.p.bertelli@gmail.com>",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zfael/scrape-it-all",
+    "directory": "packages/coin-market-cap"
+  },
+  "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "directories": {
@@ -19,8 +22,7 @@
     "npm": "^6.12.0"
   },
   "publishConfig": {
-    "access": "public",
-    "tag": "coin-market-cap"
+    "access": "public"
   },
   "dependencies": {
     "@scrape-it-all/core": "^0.2.0",

@@ -1,10 +1,13 @@
 {
   "name": "@scrape-it-all/trampos",
+  "description": "Get details of jobs available on trampos.co",
   "version": "0.2.0",
-  "description": "",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zfael/scrape-it-all",
+    "directory": "packages/trampos"
+  },
+  "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "directories": {
@@ -19,8 +22,7 @@
     "npm": "^6.12.0"
   },
   "publishConfig": {
-    "access": "public",
-    "tag": "trampos"
+    "access": "public"
   },
   "dependencies": {
     "@scrape-it-all/core": "^0.2.0",

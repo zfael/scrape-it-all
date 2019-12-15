@@ -1,6 +1,6 @@
 import core, { CoreArgs } from '@scrape-it-all/core';
 
-export interface TramposDetails {
+export interface JobDetails {
   title: string;
   company: string;
   place: string;
@@ -9,11 +9,11 @@ export interface TramposDetails {
 
 const buildUrl = job => `https://trampos.co/oportunidades/${job}`;
 
-const tramposDetails = async ({ browser, metadata }: CoreArgs): Promise<TramposDetails> => {
-  const { job } = metadata;
+const jobDetails = async ({ browser, metadata }: CoreArgs): Promise<JobDetails> => {
+  const { jobId } = metadata;
 
   const page = await browser.newPage();
-  await page.goto(buildUrl(job));
+  await page.goto(buildUrl(jobId));
 
   const opportunitySection = await page.$(
     'div.application-container > div.opportunities-view > div#opportunity-outlet > div.opportunity-view > div.opportunity-body > div.container > div.opportunity',
@@ -34,5 +34,5 @@ const tramposDetails = async ({ browser, metadata }: CoreArgs): Promise<TramposD
 };
 
 export default {
-  tramposDetails: core.wrapper(tramposDetails),
+  jobDetails: core.wrapper(jobDetails),
 };

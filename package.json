@@ -13,8 +13,8 @@
     "lerna:clean": "lerna clean -y",
     "lerna:bootstrap": "npm run lerna:clean && lerna bootstrap --hoist"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Rafael Bertelli <rafael.p.bertelli@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^12.12.17",
     "@types/puppeteer": "^2.0.0",

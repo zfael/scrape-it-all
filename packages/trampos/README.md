@@ -1,11 +1,16 @@
 # `trampos`
 
-> TODO: description
+TODO
 
 ## Usage
 
+### Get details of a given job id
 ```
-const trampos = require('trampos');
+import trampos, { JobDetails } from '@scrape-it-all/coin-market-cap';
 
-// TODO: DEMONSTRATE API
+const metadata = {
+  jobId: 'some-job-id-here'
+};
+
+const result: JobDetails = await JobDetails.jobDetails({ metadata, launch: {} });
 ```

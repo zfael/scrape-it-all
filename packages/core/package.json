@@ -1,10 +1,13 @@
 {
   "name": "@scrape-it-all/core",
+  "description": "Core module for scrape-it-all packages",
   "version": "0.2.0",
-  "description": "",
-  "keywords": [],
-  "author": "Rafael Bertelli <rafael.p.bertelli@gmail.com>",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zfael/scrape-it-all",
+    "directory": "packages/core"
+  },
+  "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "directories": {
@@ -19,8 +22,7 @@
     "npm": "^6.12.0"
   },
   "publishConfig": {
-    "access": "public",
-    "tag": "core"
+    "access": "public"
   },
   "scripts": {
     "tsc": "tsc"
