@@ -1,6 +1,6 @@
 {
   "name": "@scrape-it-all/trampos",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "",
   "keywords": [],
   "author": "",
@@ -23,7 +23,7 @@
     "tag": "trampos"
   },
   "dependencies": {
-    "@scrape-it-all/core": "^0.1.8",
+    "@scrape-it-all/core": "^0.2.0",
     "puppeteer": "^2.0.0"
   },
   "scripts": {
