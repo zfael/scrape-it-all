@@ -2,12 +2,17 @@
   "name": "@scrape-it-all/trampos",
   "description": "Get details of jobs available on trampos.co",
   "version": "0.2.1",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zfael/scrape-it-all",
-    "directory": "packages/trampos"
-  },
+  "homepage": "https://github.com/zfael/scrape-it-all",
+  "repository": "https://github.com/zfael/scrape-it-all/tree/master/packages/trampos",
   "license": "MIT",
+  "keywords": [
+    "scrape",
+    "scrape-it-all",
+    "scraping-websites",
+    "puppeteer",
+    "trampos.co",
+    "scrape-jobs"
+  ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "directories": {

@@ -2,12 +2,16 @@
   "name": "@scrape-it-all/core",
   "description": "Core module for scrape-it-all packages",
   "version": "0.2.1",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zfael/scrape-it-all",
-    "directory": "packages/core"
-  },
+  "homepage": "https://github.com/zfael/scrape-it-all",
+  "repository": "https://github.com/zfael/scrape-it-all/tree/master/packages/core",
   "license": "MIT",
+  "keywords": [
+    "scrape",
+    "scrape-it-all",
+    "scraping-websites",
+    "puppeteer",
+    "core"
+  ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "directories": {

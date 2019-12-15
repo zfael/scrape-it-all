@@ -13,11 +13,7 @@ TODO
 
 ## Development setup
 
-```sh
-nvm use 12
-npm install
-npx ts-node src/index.ts
-```
+TODO
 
 ## Contributing
 
