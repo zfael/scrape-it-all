@@ -1,7 +1,7 @@
 {
   "name": "@scrape-it-all/core",
   "description": "Core module for scrape-it-all packages",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "https://github.com/zfael/scrape-it-all",
   "repository": "https://github.com/zfael/scrape-it-all/tree/master/packages/core",
   "license": "MIT",

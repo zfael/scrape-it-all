@@ -1,7 +1,7 @@
 {
   "name": "@scrape-it-all/coin-market-cap",
   "description": "Get information of a given crypto coin on coin market cap website",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "https://github.com/zfael/scrape-it-all",
   "repository": "https://github.com/zfael/scrape-it-all/tree/master/packages/coin-market-cap",
   "license": "MIT",
@@ -31,7 +31,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@scrape-it-all/core": "^0.2.1",
+    "@scrape-it-all/core": "^0.2.2",
     "puppeteer": "^2.0.0"
   },
   "scripts": {

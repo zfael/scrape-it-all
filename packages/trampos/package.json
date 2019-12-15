@@ -1,7 +1,7 @@
 {
   "name": "@scrape-it-all/trampos",
   "description": "Get details of jobs available on trampos.co",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "https://github.com/zfael/scrape-it-all",
   "repository": "https://github.com/zfael/scrape-it-all/tree/master/packages/trampos",
   "license": "MIT",
@@ -30,7 +30,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@scrape-it-all/core": "^0.2.1",
+    "@scrape-it-all/core": "^0.2.2",
     "puppeteer": "^2.0.0"
   },
   "scripts": {
