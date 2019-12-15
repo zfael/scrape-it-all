@@ -1,17 +1,21 @@
 {
   "compilerOptions": {
-    "target": "ES6",
     "module": "commonjs",
     "declaration": true,
-    "outDir": "./lib",
-    "strict": false,
-    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
     "removeComments": true,
-    "preserveConstEnums": true,
-    "baseUrl": "src",
-    "lib": ["esnext", "dom"],
-    "typeRoots": ["node_modules/@types"]
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "ES2018",
+    "sourceMap": true,
+    "lib": [
+      "ES2018",
+      "dom"
+    ]
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules/**/*.ts"]
-}
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+ }

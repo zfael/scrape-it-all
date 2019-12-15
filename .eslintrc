@@ -4,6 +4,24 @@
   "rules": {
     "no-console": "off"
   },
+  "overrides": [
+    {
+      "files": "packages/**/*",
+      "rules": {
+        "import/no-extraneous-dependencies": 0
+      }
+    },
+    {
+      "files": "scripts/**/*",
+      "rules": {
+        "import/no-extraneous-dependencies": 0,
+        "prettier/prettier": 0,
+        "import/order": 0,
+        "global/require": 0
+      }
+    }
+  ],
+
   "env": {
     "node": true,
     "jest": true

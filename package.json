@@ -1,42 +1,43 @@
 {
-  "name": "@zfael/scrape-it-all",
-  "version": "0.0.3",
-  "description": "Modular web scraper for Node.JS",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "author": "Rafael Bertelli <rafael.p.bertelli@gmail.com>",
-  "license": "ISC",
-  "keywords": [
-    "web-scraping",
-    "crawler",
-    "scraping-websites",
-    "scraping",
-    "scraper"
-  ],
+  "name": "scrape-it-all",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx src/",
-    "build": "rm -rf dist && tsc"
+    "clean": "rm -rf ./packages/*/lib",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "prebuild": "npm run clean",
+    "build": "lerna run tsc",
+    "postbuild": "npm run lint",
+    "publish": "npm run build && lerna publish",
+    "lerna:clean": "lerna clean -y",
+    "lerna:bootstrap": "npm run lerna:clean && lerna bootstrap --hoist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.12.17",
+    "@types/puppeteer": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.11.0",
+    "@typescript-eslint/parser": "^2.11.0",
+    "chalk": "^3.0.0",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-typescript": "^6.3.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-prettier": "^3.1.1",
+    "execa": "^3.4.0",
+    "lerna": "^3.19.0",
+    "prettier": "^1.19.1",
+    "string-length": "^3.1.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
   },
   "dependencies": {
     "puppeteer": "^2.0.0"
   },
-  "devDependencies": {
-    "@types/node": "^12.12.14",
-    "@types/puppeteer": "^2.0.0",
-    "@typescript-eslint/eslint-plugin": "^2.10.0",
-    "@typescript-eslint/parser": "^2.10.0",
-    "eslint": "^6.7.2",
-    "eslint-config-airbnb-typescript": "^6.3.1",
-    "eslint-config-prettier": "6.7.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-prettier": "3.1.1",
-    "prettier": "1.19.1",
-    "ts-node": "^8.5.4",
-    "typescript": "^3.7.3"
-  },
   "engines": {
     "node": "^12.13.0",
     "npm": "^6.12.0"
-  },
-  "files": ["lib/**/"]
+  }
 }

@@ -1,11 +1,14 @@
-import core from '../../core';
-
-import { CoreArgs } from '../../core/types';
-import { CryptoCoinDetails } from './types';
+import core, { CoreArgs } from '@scrape-it-all/core';
 
 const buildUrl = crypto => `https://coinmarketcap.com/currencies/${crypto}/`;
 
-const getCryptoDetails = async ({ browser, metadata }: CoreArgs): Promise<CryptoCoinDetails> => {
+export interface CryptoCoinDetails {
+  name: string;
+  icon: string;
+  currentValue: string;
+}
+
+const cryptoDetails = async ({ browser, metadata }: CoreArgs): Promise<CryptoCoinDetails> => {
   const { crypto } = metadata;
 
   const page = await browser.newPage();
@@ -28,5 +31,5 @@ const getCryptoDetails = async ({ browser, metadata }: CoreArgs): Promise<Crypto
 };
 
 export default {
-  getCryptoDetails: core.wrapper(getCryptoDetails),
+  cryptoDetails: core.wrapper(cryptoDetails),
 };

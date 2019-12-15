@@ -1,0 +1,7 @@
+**/coverage/**
+**/node_modules/**
+bin/
+scripts/*
+packages/*/lib/**
+packages/*/build-es5/**
+!.eslintrc.js
