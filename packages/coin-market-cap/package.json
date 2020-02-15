@@ -12,7 +12,7 @@
     "puppeteer",
     "coin-market-cap",
     "crypto-coin",
-    "bitcoint"
+    "bitcoin"
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -31,8 +31,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@scrape-it-all/core": "^0.2.2",
-    "puppeteer": "^2.0.0"
+    "@scrape-it-all/core": "^0.2.2"
   },
   "scripts": {
     "tsc": "tsc"

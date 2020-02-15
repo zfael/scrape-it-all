@@ -30,8 +30,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@scrape-it-all/core": "^0.2.2",
-    "puppeteer": "^2.0.0"
+    "@scrape-it-all/core": "^0.2.2"
   },
   "scripts": {
     "tsc": "tsc"
